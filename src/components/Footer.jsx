@@ -1,60 +1,67 @@
-import { Box, Divider, Link, Text } from '@chakra-ui/react'
+import { Box, Divider, Text, Link, Image } from '@chakra-ui/react'
+import { Link as RouterLink } from 'react-router-dom';
 import React from 'react'
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-// import { FaFacebook } from "react-icons/fa";
+import { FaYoutube, FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
     return (
-        <Box bg={"gray.900"} color={"white"}>
+        <>
             <hr />
-            <Box width={"85%"} margin={"auto"} mt={"40px"} mb={"15px"} height={"auto"} display={"flex"} flexDirection={{ base: "column", sm: "column", md: "row", lg: "row", xl: "row", '2xl': "row" }} justifyContent={"space-evenly"} alignItems={"flex-start"} gap={"30px"}>
-                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
-                    <img
-                        src="https://edulab.in/wp-content/uploads/2022/08/edulab-1.jpg"
-                        height={"130px"}
-                        width={"130px"}
-                    />
 
-                </Box>
-                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"} >
-                    <Link>About Us</Link>
-                    <Link>Contact us</Link>
-                </Box>
-                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"} >
+            <Box zIndex={"1"} height={{ base: "500px", sm: "500px", md: "300px", lg: "300px", xl: "300px", '2xl': "300px" }} display={"flex"} flexDirection={"column"} gap={"10px"}>
+                <Box  width={"90%"} margin={"auto"} height={"auto"} display={"flex"} flexDirection={{ base: "column", sm: "column", md: "row", lg: "row", xl: "row", '2xl': "row" }} justifyContent={"space-evenly"} alignItems={"flex-start"} gap={"20px"}>
+                    <Box pt={{ base: "20px", sm: "20px", md: "0px", lg: "0px", xl: "0px", '2xl': "0px" }} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
+                        <Image
+                            src="../images/edulab.png"
+                            // height={"80px"}
+                            // height={{ base: "60px", sm: "60px", md: "60px", lg: "60px", xl: "60px", '2xl': "60px" }}
+                            width={"170px"}
+                            // borderRadius={"10px"}
+                            // bg={"#1A1A2E"}
+                            // border={"2px solid red"}
+                        />
+                    </Box>
 
-
-                    <Link fontSize={"16px"} >
-                        Use-cases
-                    </Link>
-                    <Link fontSize={"13px"} color={"gray.500"}>
-                        AI Question Generator</Link>
-
-                </Box>
-                <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
-                    <Link fontSize={"16px"} >Legal</Link>
-                    <Link fontSize={"13px"} color={"gray.500"}> Terms of Service</Link>
-                    <Link fontSize={"13px"} color={"gray.500"}>Privacy Policy</Link>
-
-                </Box>
-
-            </Box>
-            <hr />
-            <Box width={"85%"} margin={"auto"} mt={"30px"}  >
-                <Box display={"flex"} flexDirection={{ base: "column", sm: "column", md: "row", lg: "row", xl: "row", '2xl': "row" }} justifyContent={"space-evenly"} alignItems={"flex-start"} gap={"30px"}>
-                    <Text fontSize={"13px"} color={"gray.500"}>Copyright © EdugenAI, Inc. All rights reserved. </Text>
-                    <Box mb={"20px"} display={"flex"} justifyContent={"space-evenly"} alignItems={"flex-start"} gap={"30px"} >
-                        <FaYoutube size={30} />
-                        <FaFacebook size={30} />
-                        <FaLinkedin size={30} />
-                        <FaInstagram size={30} />
+                    <Box ml={{ base: "20px", sm: "20px", md: "40px" }} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
+                        <Link fontWeight={"medium"} fontSize={"16px"}> <RouterLink to="/about">About Us</RouterLink></Link>
+                        <Link fontWeight={"medium"} fontSize={"16px"}> <RouterLink to="/contacts">Contact us</RouterLink></Link>
+                    </Box>
+                    <Box ml={{ base: "20px", sm: "20px", md: "30px" }} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
+                        <Link fontSize={"16px"} fontWeight={"medium"}>Use-Cases</Link>
+                        <Link fontSize={"15px"}fontWeight={"medium"}>AI Question Generator</Link>
+                    </Box>
+                    <Box ml={{ base: "20px", sm: "20px", md: "30px" }} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
+                        <Link fontSize={"17px"} fontWeight={"medium"}>Legal</Link>
+                        <Link fontSize={"14px"} fontWeight={"medium"}>Terms of Service</Link>
+                        <Link fontSize={"14px"} fontWeight={"medium"} >Privacy Policy</Link>
                     </Box>
                 </Box>
+                <hr />
+                
+                <Box width={"90%"} margin={"auto"} >
+                    <Box ml={{ base: "20px", sm: "20px", md: "30px" }}  display={"flex"} flexDirection={{ base: "column", sm: "column", md: "row", lg: "row", xl: "row", '2xl': "row" }}
+                     justifyContent={{base:"space-evenly",md:"space-around"}} alignItems={"flex-start"} gap={{ base:"40px",sm:"40px",md:"100px"}} pt={"30px"} pb={"30px"}>
+                        <Text   fontSize={"15px"} fontWeight={"medium"}>Copyright © EdugenAI, Inc. All rights reserved.</Text>
+                        <Box   display={"flex"} justifyContent={"space-between"} alignItems={"flex-start"} gap={{base:"40px",sm:"30px"}} flexWrap={"wrap"}>
+                            <Link href=" https://www.youtube.com/user/EdulabIndernship" isExternal>
+                                <FaYoutube size={30} />
+                            </Link>
+                            <Link href="https://www.facebook.com/edulab.in/" isExternal>
+                                <FaFacebook size={30} />
+                            </Link>
+                            <Link href="https://in.linkedin.com/company/edulab" isExternal>
+                                <FaLinkedin size={30} />
+                            </Link>
 
+                            <Link href="https://twitter.com/edulab_india?lang=en" isExternal>
+                                <FaTwitter size={30} />
+                            </Link>
+                        </Box>
+                    </Box>
+                </Box>
             </Box>
-        </Box>
+        </>
     )
 }
 
 export { Footer }
-
