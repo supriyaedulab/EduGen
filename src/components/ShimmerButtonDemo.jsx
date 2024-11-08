@@ -1,10 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import ShimmerButton from "@/components/ui/shimmer-button";
 
-export function ShimmerButtonDemo({ name }) {
+export function ShimmerButtonDemo({ name, path }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(path);
+  };
+
   return (
-    <div className=" flex items-center justify-center" >
+    <div className="flex items-center justify-center">
       <ShimmerButton
-        className="shadow-2xl px-4 py-2 text-sm transition-transform duration-200 ease-in-out transform hover:scale-105" // Add hover scaling
+        onClick={handleClick} // Redirect on click
+        className="shadow-2xl px-4 py-2 text-sm transition-transform duration-200 ease-in-out transform hover:scale-105"
         background="linear-gradient(to right, rgba(0, 139, 186, 1), rgba(219, 68, 133, 1))"
         shimmerSize="0.10em"
       >

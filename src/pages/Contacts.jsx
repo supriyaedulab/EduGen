@@ -137,7 +137,7 @@ function Contacts() {
 
           color="white"
         >
-          Get In Touch
+         Contact Us
         </Heading>
       </Box>
 

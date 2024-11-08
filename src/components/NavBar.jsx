@@ -30,14 +30,17 @@ const EduGenDropdown = ({ onClose }) => (
     <MenuButton
   as={Button}
   rightIcon={<ChevronDownIcon />}
-  bg={{ base: "white", lg: "white" }} // blue on mobile/tablet, white on desktop
-  color={{ base: "gray", lg: "black" }} // white text on mobile/tablet, black on desktop
+  bg={{ base: "#187eed", lg: "white" }} // blue on mobile/tablet, white on desktop
+  color={{ base: "white", lg: "black" }} // white text on mobile/tablet, black on desktop
   width={"90px"}
   pl={"6px"}
   pr={"0px"}
+  fontSize={"18px"}
   fontWeight={"0px"}
-  _hover={{ color: { base: "gray", lg: "black" } }}
-  _expanded={{ bg: { base: "white", lg: "white" } }} // keeps bg blue when expanded
+  _hover={{ color: { base: "#187eed", lg: "black" } }}
+  _expanded={{ bg: { base: "#187eed", lg: "white" } }} // keeps bg blue when expanded
+  _hover={{ color: "#2A9D8F" }}
+            transition="color 0.2s ease"
 >
   EduGen
 </MenuButton>
@@ -149,13 +152,14 @@ export function Navbar() {
                 <EduGenDropdown key={link.name} />
               ) : (
                 <NavLink key={link.name} to={link.path}>
-                  <Text color={"black"} fontSize={"17px"}>
+                  <Text color={"black"} fontSize={"18px"}  _hover={{ color: "#2A9D8F" }}
+            transition="color 0.2s ease">
                     {link.name}
                   </Text>
                 </NavLink>
               )
             )}
-            <ShimmerButtonDemo name={"Start for Free"} />
+            <ShimmerButtonDemo name={"Start for Free"}path="/questionForm" />
           </HStack>
         </HStack>
 
@@ -166,27 +170,38 @@ export function Navbar() {
           onClick={isOpen ? onClose : onOpen}
         />
       </Flex>
-
       {isOpen ? (
-        <Box  display={{ lg: "none" }} bg={"white"} color={"gray.500"} width={"100%"}>
-          <Stack as={"nav"} spacing={4} p={4}>
-            {Links.map((link) =>
-              link.dropdown ? (
-                <EduGenDropdown key={link.name} onClose={onClose} />
-              ) : (
-                <RouterNavLink key={link.name} to={link.path} onClick={onClose} >
-                  <Text color="gray" fontSize={"17px"} pl={"10px"}>
-                    {link.name}
-                  </Text>
-                </RouterNavLink>
-              )
-            )}
-            <Box display={"flex"} alignSelf={"flex-start"}>
-              <ShimmerButtonDemo name={"Start for Free"} />
-            </Box>
-          </Stack>
-        </Box>
-      ) : null}
+  <Box
+    display={{ lg: "none" }}
+    position="fixed"  // Make the Box fixed to cover the whole screen
+    top="0"
+    left="0"
+    width="100vw"  // Full width
+    height="100vh"  // Full height
+    bg="#187eed"  // Background color for overlay
+    color="black"
+    zIndex="20"  // Ensure it's above other elements
+    p={4}  // Padding inside the box
+  >
+    <Stack as={"nav"} spacing={4} pl={"30px"} pt={"30px"}>
+      {Links.map((link) =>
+        link.dropdown ? (
+          <EduGenDropdown key={link.name} onClose={onClose} />
+        ) : (
+          <RouterNavLink key={link.name} to={link.path} onClick={onClose}>
+            <Text color="white" fontSize={"18px"} pl={"7px"} >
+              {link.name}
+            </Text>
+          </RouterNavLink>
+        )
+      )}
+      <Box display={"flex"} alignSelf={"flex-start"}>
+        <ShimmerButtonDemo name={"Start for Free"} path="/questionForm" />
+      </Box>
+    </Stack>
+  </Box>
+) : null}
+
     </Box>
   );
 }
