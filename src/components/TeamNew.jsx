@@ -1,5 +1,5 @@
 import { Box, Image, Text, IconButton, Flex, useBreakpointValue, Heading } from '@chakra-ui/react';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter,FaLinkedin } from 'react-icons/fa';
 
 const TeamSection = () => {
     const cardSize = useBreakpointValue({ base: '250px', md: '260px' });
@@ -130,8 +130,8 @@ const TeamSection = () => {
                                 <IconButton
                                     as="a"
                                     href="#"
-                                    aria-label="Instagram"
-                                    icon={<FaInstagram />}
+                                    aria-label="Linkedin"
+                                    icon={<FaLinkedin />}
                                     fontSize="21px"
                                     color="#333"
                                     _hover={{ color: '#0c52a1' }}

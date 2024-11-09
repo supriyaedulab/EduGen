@@ -3,7 +3,7 @@ import { Route,Routes } from 'react-router-dom'
 import { Home } from '../pages/Home'
 
 import { Contacts } from '../pages/Contacts'
-import { Teams } from '../pages/Teams'
+
 import {QuestionGeneratorForm} from '../pages/QuetionGenerator'
 import { About } from '../pages/About'
 import { QuestionForm } from './QuetionForm'
@@ -21,7 +21,7 @@ const AllRoutes = () => {
     <Route path="/ContentTool" element={<ContentTool/>} />
     <Route path="/MultilingualContentTool" element={<MultilingualContentTool/>} />
     <Route path="/questionForm" element={<QuestionForm/>} /> 
-    <Route path="/teams" element={<Teams/>} /> 
+   
     <Route path="/about" element={<About/>} /> 
     <Route path="/quetionform" element={<QuestionForm/>} /> 
     <Route path="/contacts" element={<Contacts />}  />   

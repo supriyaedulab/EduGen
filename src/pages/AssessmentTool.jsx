@@ -11,6 +11,7 @@ import {
     Button, Container, VStack
 } from "@chakra-ui/react";
 import { AssessmentCard } from "../components/AssessmentCard";
+import { ShimmerButtonDemo } from "../components/ShimmerButtonDemo";
 const data1 = [
     {
         title: "AI-Powered Lesson Content Tagging Tool",
@@ -53,7 +54,7 @@ const AssessmentTool = () => {
                 color="white"
 
                 p={{ base: 6, md: 10 }}
-           
+
             >
                 <Flex
                     direction={{ base: "column", md: "row" }}
@@ -64,14 +65,16 @@ const AssessmentTool = () => {
                     border={"2px solid #014d7e"}
                 >
                     {/* _hover={{ transform: "scale(1.03)" }}  */}
-                    <Stack>
+                    <Stack align="start">
                         <Heading as="h1" size="3xl">
                             AI Content Tools for Educators
                         </Heading>
-                        <Text mt={"10px"} fontSize="2xl" fontWeight={"bold"}>Automate question creation, enhance knowledge checks, and save hours with intelligent AI solutions.</Text>
-                        <Button mt={"20px"} width={"130px"} background="linear-gradient(to right, rgba(0, 139, 186, 1), rgba(219, 68, 133, 1))" color={"white"} padding={"20px"} border={"2px solid white"} _hover={{ background: "linear-gradient(to right, rgba(0, 139, 186, 1), rgba(219, 68, 133, 1))", transform: "scale(1.05)" }} >Try It Now</Button>
-                        {/* <ShimmerButtonDemo name={"Start Now"}/> */}
+                        <Text mt="10px" fontSize="2xl" fontWeight="bold">
+                            Automate question creation, enhance knowledge checks, and save hours with intelligent AI solutions.
+                        </Text>
+                        <ShimmerButtonDemo name="Try It Now" path="/questionForm"/>
                     </Stack>
+
                     <Image
                         src="../images/ai-with-laptop.jpg" // Replace with your image source
                         alt="AI Content Tools"
@@ -101,7 +104,7 @@ const AssessmentTool = () => {
             <Box bg={"#ffffff"} boxShadow={"lg"}>
                 <Box color={"gray.500"} padding={"50px"} >
                     <Heading as="h1" size="xl" pb={"30px"} fontWeight={"bold"} >
-                        AI Content Tools for Educators 
+                        AI Content Tools for Educators
                     </Heading>
                     <Box fontSize="xl" display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} fontWeight={"medium"} fontStyle={"italic"}>
                         <Text pb={"20px"}>At Edugen, we enjoy a good challenge. We thrive when pushing the boundaries of innovation. Recently, we’ve been particularly excited about how AI can help educators enhance their content-creation efforts.</Text>
@@ -300,7 +303,7 @@ const AssessmentTool = () => {
                             fontSize={{ base: "xl", sm: "xl", md: "3xl", lg: "3xl", xl: "3xl" }}
                             fontWeight="medium" fontStyle={"italic"}> Edugen has been leading the charge in large-scale education technology innovation. To learn more about our AI-enabled solutions and our human-in-the-loop approach to AI, contact us.</Text>
                     </Box>
-                    <Button mt={"20px"} width={"130px"} background="linear-gradient(to right, rgba(0, 139, 186, 1), rgba(219, 68, 133, 1))" color={"white"} padding={"20px"} border={"2px solid white"} _hover={{ background: "linear-gradient(to right, rgba(0, 139, 186, 1), rgba(219, 68, 133, 1))", transform: "scale(1.05)" }} >Contact Us</Button>
+                    <ShimmerButtonDemo name="Contact Us" path="/contacts"/>
                 </Box>
             </Box>
         </Box>

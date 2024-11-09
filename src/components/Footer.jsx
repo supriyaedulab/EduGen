@@ -21,14 +21,14 @@ const Footer = () => {
                         // border={"2px solid red"}
                         />
                     </Box>
-
+        	            
                     <Box ml={{ base: "20px", sm: "20px", md: "40px" }} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
                         <Link fontWeight={"medium"} fontSize={"16px"}> <RouterLink to="/about">About Us</RouterLink></Link>
                         <Link fontWeight={"medium"} fontSize={"16px"}> <RouterLink to="/contacts">Contact us</RouterLink></Link>
                     </Box>
                     <Box ml={{ base: "20px", sm: "20px", md: "30px" }} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
                         <Link fontSize={"16px"} fontWeight={"medium"}>Use-Cases</Link>
-                        <Link fontSize={"15px"} fontWeight={"medium"}>AI Question Generator</Link>
+                         <Link fontSize={"15px"} fontWeight={"medium"}>AI Question Generator</Link>
                     </Box>
                     <Box ml={{ base: "20px", sm: "20px", md: "30px" }} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
                         <Link fontSize={"17px"} fontWeight={"medium"}>Legal</Link>

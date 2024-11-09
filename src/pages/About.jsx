@@ -5,15 +5,9 @@ import {
   Grid,
   Container,
   VStack,
-  useColorModeValue,
-  Flex,
-  Image, Icon,
-  Skeleton,
-  SimpleGrid,
-  SkeletonText, Link
+ 
 } from "@chakra-ui/react";
-import { FaLinkedin } from "react-icons/fa";
-import React, { useState, useEffect } from "react";
+
 import { TeamSection } from "../components/TeamNew";
 
 
