@@ -58,7 +58,7 @@ const EduGenDropdown = ({ onClose }) => (
       <MenuItem as={RouterNavLink} to="/MultilingualContentTool" onClick={onClose} fontSize="sm" fontWeight={"medium"} color={"black"}>
         Multilingual Content with Edugen's AI Language Translation Tool
       </MenuItem>
-      <MenuItem as={RouterNavLink} to="/questionForm" onClick={onClose} fontSize="sm" fontWeight={"medium"} color={"black"}>
+      <MenuItem as={RouterNavLink} to="/questionform" onClick={onClose} fontSize="sm" fontWeight={"medium"} color={"black"}>
         QuestForm
       </MenuItem>
     </MenuList>

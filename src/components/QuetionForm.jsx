@@ -406,7 +406,7 @@ function QuestionForm() {
     };
 
     return (
-        <Box color={"black"} width={"100%"} mb={"50px"} padding={"50PX"}>
+        <Box color={"black"} width={"100%"} pt={"150px"} padding={"50PX"}>
             <Box
                 width={{ base: "85%", sm: "80%", md: "70%", lg: "70%", xl: "45%", '2xl': "40%" }}
                 margin={"auto"}

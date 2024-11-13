@@ -36,10 +36,11 @@ const Hero = () => {
             fontSize={["5xl", "5xl", "6xl"]}
             width="99%"
             margin="2px"
-            bgGradient="linear(to-r, cyan.500, pink.600)"
+            // bgGradient="linear(to-r, cyan.500, #8259c1)"
+            background="linear-gradient(to right, rgba(0, 139, 186, 1), rgba(219, 68, 133, 1))"
             bgClip="text"
             backgroundSize="200% auto"
-            
+            // wordSpacing="-2px"
           >
             Generate quizzes from any text in one click using AI.
           </Text>
