@@ -18,14 +18,14 @@ const AllRoutes = () => {
       <Route path="/AssessmentTool" element={<AssessmentTool />} />
       <Route path="/ContentTool" element={<ContentTool />} />
       <Route path="/MultilingualContentTool" element={<MultilingualContentTool />} />
-      <Route path="/about" element={<ProtectedRoute><About /></ProtectedRoute>} />
+      <Route path="/about" element={<About />} />
       <Route path="/contacts" element={<Contacts />} />
       <Route
         path="/questionform"
         element={
-          // <ProtectedRoute>
+          <ProtectedRoute>
             <QuestionForm />
-          // </ProtectedRoute>
+          </ProtectedRoute>
         }
       />
     </Routes>

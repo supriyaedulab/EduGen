@@ -3,7 +3,7 @@ import { Box, Heading, ListItem, UnorderedList ,Image, Text} from '@chakra-ui/re
 import React from 'react';
 
 const AssessmentCard = ({ data ,boxShadow,backgroundColor }) => {
-    console.log(data);
+    // console.log(data);
     return (
         <>
         {/* gap={{ base: "20px", sm: "20px", md: "20px" ,lg:"30px",xl:"30px"}} */}

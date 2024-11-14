@@ -1,11 +1,15 @@
-import React, { useEffect } from "react";
-import { useAuth } from "../hooks/useAuthHook";
+import React from "react";
+import { useAuthContext } from "../contexts/AuthProvider";
+
 
 const ProtectedRoute = ({ children }) => {
-    const { isAuthenticated, token  } = useAuth();
+    const { isAuthenticated, err } = useAuthContext();
     
     // console.log("isAuthenticated", isAuthenticated)
     // console.log("token", token)
+    if(err){
+        return <div>Something went wrong.....</div>
+    }
   
     return isAuthenticated ? children : <div>something went wrong...</div>;
 };
