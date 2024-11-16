@@ -4,7 +4,7 @@ import { FaUserFriends, FaClock, FaBrain, FaChartLine } from "react-icons/fa";
 const BenefitsSection = () => {
   return (
     <Box as="section" textAlign="center" py={12} bg="gray.50" >
-      <Heading as="h2" fontWeight={"bolder"}   fontSize={["4xl", "4xl", "5xl"]} color={"#728199"}  width={{ base: "93%", sm: "93%", md: "95%", lg: "90%", xl: "90%", '2xl': "90%" }} margin={"auto"}  mb={8}>
+      <Heading as="h2" fontWeight={"bolder"}   fontSize={["3xl","3xl", "4xl", "5xl"]} color={"#728199"}  width={{ base: "93%", sm: "93%", md: "95%", lg: "90%", xl: "90%", '2xl': "90%" }} margin={"auto"}  mb={8}>
         Why Use the AI-Powered Question Generator?
       </Heading>
 

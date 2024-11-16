@@ -189,7 +189,7 @@ export function Navbar() {
             color="black"
             p={4}
             maxW="400px" // Limit width
-            maxH="80vh" // Limit height
+            maxH="100vh" // Limit height
             mx="auto" // Center horizontally
             mt="20px" // Margin from top
             overflowY="auto" // Scrollable if content exceeds height
