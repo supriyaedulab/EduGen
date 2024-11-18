@@ -32,8 +32,8 @@ const Footer = () => {
                     </Box>
                     <Box ml={{ base: "20px", sm: "20px", md: "30px" }} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
                         <Link fontSize={"17px"} fontWeight={"medium"}>Legal</Link>
-                        <Link fontSize={"14px"} fontWeight={"medium"}>Terms of Service</Link>
-                        <Link fontSize={"14px"} fontWeight={"medium"} >Privacy Policy</Link>
+                        <Link fontSize={"15px"} fontWeight={"medium"}>Terms of Service</Link>
+                        <Link fontSize={"15px"} fontWeight={"medium"} >Privacy Policy</Link>
                     </Box>
                 </Box>
                 <hr />

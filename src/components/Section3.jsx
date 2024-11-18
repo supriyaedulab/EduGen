@@ -4,7 +4,7 @@ import {InfoCard} from "./InfoCard"; // Adjust the path as needed
 
 const Section3 = () => {
   return (
-    <Box bg="#f0f3fa" pt="30px" pb="30px" width="100%">
+    <Box bg="#f0f3fa" pt="50px" pb="50px" width="100%">
       <Box
         width="95%"
         margin="auto"

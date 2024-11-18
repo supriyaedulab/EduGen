@@ -44,7 +44,8 @@ const EduGenDropdown = ({ onClose }) => (
     </MenuButton>
     <MenuList
       sx={{
-        width: ["280px", "400px", "450px"],
+        width: ["250px", "250px", "450px","450px","450px"],
+        // ["250px", "250px", "450px","450px","450px"]
         padding: "2px",
         fontSize: ["xs", "sm", "md"],
       }}
@@ -52,15 +53,16 @@ const EduGenDropdown = ({ onClose }) => (
       <MenuItem as={RouterNavLink} to="/AssessmentTool" onClick={onClose} fontSize="sm" fontWeight={"medium"} color={"black"}>
         AI Assessment Tools for Educators
       </MenuItem>
+      <MenuItem as={RouterNavLink} to="/questionform" onClick={onClose} fontSize="sm" fontWeight={"medium"} color={"black"}>
+        QuestForm
+      </MenuItem>
       <MenuItem as={RouterNavLink} to="/ContentTool" onClick={onClose} fontSize="sm" fontWeight={"medium"} color={"black"}>
         AI Content Paraphrasing Tool
       </MenuItem>
       <MenuItem as={RouterNavLink} to="/MultilingualContentTool" onClick={onClose} fontSize="sm" fontWeight={"medium"} color={"black"}>
         Multilingual Content with Edugen's AI Language Translation Tool
       </MenuItem>
-      <MenuItem as={RouterNavLink} to="/questionform" onClick={onClose} fontSize="sm" fontWeight={"medium"} color={"black"}>
-        QuestForm
-      </MenuItem>
+    
     </MenuList>
   </Menu>
 );
@@ -127,7 +129,7 @@ export function Navbar() {
             width={"130px"}
             bg={"white"}
             borderRadius={"5px"}
-            // border={"2px solid red"}
+          // border={"2px solid red"}
           >
             <img src="../images/edulab.png" alt="logo" />
           </Box>
@@ -183,17 +185,18 @@ export function Navbar() {
 
           {/* Overlay content with close button */}
           <Box
-            display={{ md: "none" }}
-            bg="white"
-            borderRadius="lg"
-            color="black"
-            p={4}
-            maxW="400px" // Limit width
-            maxH="100vh" // Limit height
-            mx="auto" // Center horizontally
-            mt="20px" // Margin from top
-            overflowY="auto" // Scrollable if content exceeds height
-            position="relative" // To position the close button inside this box
+           display={{ md: "none" }}
+           bg="white"
+           borderRadius="lg"
+           color="black"
+           p={4}
+            // Add extra padding-bottom for mobile view
+           maxW={{base:"400px",sm:"500px"}} // Limit width
+           height={"320px"}
+           mx="auto" // Center horizontally
+           mt="20px" // Margin from top
+           overflowY="auto" // Scrollable if content exceeds height
+           position="relative"
           >
             {/* Close button */}
             <IconButton

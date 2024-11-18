@@ -23,9 +23,9 @@ const AllRoutes = () => {
       <Route
         path="/questionform"
         element={
-          <ProtectedRoute>
+          // <ProtectedRoute>
             <QuestionForm />
-          </ProtectedRoute>
+          // </ProtectedRoute>
         }
       />
     </Routes>

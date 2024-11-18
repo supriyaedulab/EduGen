@@ -48,7 +48,7 @@ const TypingAnimation = () => {
       textAlign="center"
       color={items[index].color}
     >
-      <Text fontSize={["4xl","4xl", "5xl", "5xl"]}
+      <Text fontSize={["3xl","4xl", "5xl", "5xl"]}
       fontWeight="bold"> For {text}</Text>
       
     </Box>
