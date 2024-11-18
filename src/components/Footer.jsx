@@ -32,17 +32,17 @@ const Footer = () => {
                     </Box>
                     <Box ml={{ base: "20px", sm: "20px", md: "30px" }} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"} gap={"10px"}>
                         <Link fontSize={"17px"} fontWeight={"medium"}>Legal</Link>
-                        <Link fontSize={"15px"} fontWeight={"medium"}>Terms of Service</Link>
-                        <Link fontSize={"15px"} fontWeight={"medium"} >Privacy Policy</Link>
+                        <Link fontSize={"14px"} fontWeight={"medium"}>Terms of Service</Link>
+                        <Link fontSize={"14px"} fontWeight={"medium"} >Privacy Policy</Link>
                     </Box>
                 </Box>
                 <hr />
-
-                <Box width={"90%"} margin={"auto"}  >
-                    <Box ml={{ base: "20px", sm: "20px", md: "30px" }} display={"flex"} flexDirection={{ base: "column", sm: "column", md: "row", lg: "row", xl: "row", '2xl': "row" }}
-                        justifyContent={{ base: "space-evenly",sm: "space-evenly",md: "space-around" }} alignItems={"flex-start"} gap={{ base: "40px", sm: "20px", md: "100px" }} >
-                        <Text fontSize={"15px"} fontWeight={"medium"}>Copyright © EdugenAI, Inc. All rights reserved.</Text>
-                        <Box display={"flex"} justifyContent={"space-between"} alignItems={"flex-start"} gap={{ base: "40px", sm: "30px" }} flexWrap={"wrap"}>
+                
+                <Box  width={{ base: "95%", sm: "98%", md: "80%", lg: "80%", xl: "80%", '2xl': "60%"}} margin={"auto"}  >
+                    <Box  width={"98%"} margin={"auto"} display={"flex"} flexDirection={{ base: "column", sm: "row", md: "row", lg: "row", xl: "row", '2xl': "row" }}
+                        justifyContent={{ base: "space-evenly",sm: "space-evenly",md: "space-around" }} alignItems={"flex-start"} gap={{ base: "20px", sm: "20px", md: "100px" }} >
+                        <Text pl={{  sm: "30px", md: "0px",lg:"0px",xl:"0px" }} width={{ base: "87%", sm: "98%", md: "90%", lg: "60%", xl: "60%", '2xl': "50%"}} margin ={"auto"} fontSize={"14px"} fontWeight={"medium"}>Copyright © EdugenAI, Inc. All rights reserved.</Text>
+                        <Box  width={{ base: "86%", sm: "98%", md: "90%", lg: "40%", xl: "50%", '2xl': "40%"}} margin ={"auto"}display={"flex"} justifyContent={"space-between"} alignItems={"flex-start"} mr={"30px"} >
                             <Link href=" https://www.youtube.com/user/EdulabIndernship" isExternal>
                                 <FaYoutube size={30} />
                             </Link>
@@ -65,3 +65,5 @@ const Footer = () => {
 }
 
 export { Footer }
+
+
