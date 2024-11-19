@@ -42,7 +42,7 @@ const Footer = () => {
                     <Box  width={"98%"} margin={"auto"} display={"flex"} flexDirection={{ base: "column", sm: "row", md: "row", lg: "row", xl: "row", '2xl': "row" }}
                         justifyContent={{ base: "space-evenly",sm: "space-evenly",md: "space-around" }} alignItems={"flex-start"} gap={{ base: "20px", sm: "20px", md: "100px" }} >
                         <Text pl={{  sm: "30px", md: "0px",lg:"0px",xl:"0px" }} width={{ base: "87%", sm: "98%", md: "90%", lg: "60%", xl: "60%", '2xl': "50%"}} margin ={"auto"} fontSize={"14px"} fontWeight={"medium"}>Copyright © EdugenAI, Inc. All rights reserved.</Text>
-                        <Box  width={{ base: "86%", sm: "98%", md: "90%", lg: "40%", xl: "50%", '2xl': "40%"}} margin ={"auto"}display={"flex"} justifyContent={"space-between"} alignItems={"flex-start"} mr={"30px"} >
+                        <Box  width={{ base: "85%", sm: "98%", md: "90%", lg: "40%", xl: "50%", '2xl': "40%"}} margin ={"auto"}display={"flex"} justifyContent={"space-between"} alignItems={"flex-start"} mr={"30px"} >
                             <Link href=" https://www.youtube.com/user/EdulabIndernship" isExternal>
                                 <FaYoutube size={30} />
                             </Link>

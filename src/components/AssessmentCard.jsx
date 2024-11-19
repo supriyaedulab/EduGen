@@ -7,8 +7,8 @@ const AssessmentCard = ({ data ,boxShadow,backgroundColor }) => {
     return (
         <>
         {/* gap={{ base: "20px", sm: "20px", md: "20px" ,lg:"30px",xl:"30px"}} */}
-            <Box textAlign={"justify"} boxShadow ={boxShadow } backgroundColor={backgroundColor} padding={"30px"} display={"flex"}  flexDirection={{ base: "column", sm: "column", md: "row", lg: "row" }} justifyContent={"space-evenly"} alignItems={"center"} gap={"30px"} >
-                <Box display={"flex"} flexDirection={"column"} fontWeight={"normal"} justifyContent={"space-evenly"} width={{ base: "95%", sm: "95%", md: "60%" ,lg:"60%",xl:"60%"}}>
+            <Box textAlign={"justify"} boxShadow ={boxShadow } backgroundColor={backgroundColor} p={"30px"} pt={"30px"}pb={"30px"} display={"flex"}  flexDirection={{ base: "column", sm: "column", md: "column", lg: "row" }} justifyContent={"space-evenly"} alignItems={"center"} gap={"30px"} >
+                <Box display={"flex"} flexDirection={"column"} fontWeight={"normal"} justifyContent={"space-evenly"} width={{ base: "95%", sm: "95%", md: "95%" ,lg:"60%",xl:"60%"}}>
 
                 
                     <Heading as="h1" size="xl" color={"#434343"} textAlign={"left"} pb={"2"}>
@@ -26,14 +26,15 @@ const AssessmentCard = ({ data ,boxShadow,backgroundColor }) => {
                         </UnorderedList>
                     </Box>
                 </Box>
-                <Box width={{ base: "95%", sm: "95%", md: "35%" ,lg:"35%",xl:"35%"}} >
+                <Box width={{ base: "95%", sm: "95%", md: "95%" ,lg:"35%",xl:"35%"}} >
                     <Image
                         src={data.pic} // Replace with your image source
                         alt="AI Content Tools"
                         mt={{ base: 6, md: 0 }}
                         borderRadius={"10px"}
-                        height={"100%"}
-                        width={"100%"}
+                        height={"90%"}
+                        width={"90%"}
+                        margin={"auto"}
                     />
                 </Box>
             </Box>
