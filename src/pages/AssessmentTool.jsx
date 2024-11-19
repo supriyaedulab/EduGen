@@ -125,7 +125,7 @@ const AssessmentTool = () => {
                 >
 
                     <Text
-                        fontSize={["2xl","2xl","3xl", "3xl"]} fontWeight="medium" fontStyle={"italic"} textAlign={textAlign} color={"gray.500"} width={"94%"}
+                        fontSize={["2xl","2xl","3xl", "3xl"]} fontWeight="medium"  textAlign={textAlign} color={"gray.500"} width={"94%"}
                         margin={"auto"} pt={"30px"} pb={"30px"}>
                         Tag, enhance, paraphrase, and translate educational materials while
                         upholding high standards with our Edugen AI content creation tools.
@@ -138,7 +138,7 @@ const AssessmentTool = () => {
                         <Heading as="h1" fontSize={["4xl","4xl","5xl", "5xl"]}pt={"30px"} pb={"20px"} fontWeight={"bold"}textAlign={textAlign} >
                             AI Content Tools for Educators
                         </Heading>
-                        <Box fontSize="xl" display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} fontWeight={"medium"} fontStyle={"italic"}textAlign={textAlign}>
+                        <Box fontSize="xl" display={"flex"} flexDirection={"column"} justifyContent={"space-evenly"} fontWeight={"medium"} textAlign={textAlign}>
                             <Text pb={"20px"}>At Edugen, we enjoy a good challenge. We thrive when pushing the boundaries of innovation. Recently, we’ve been particularly excited about how AI can help educators enhance their content-creation efforts.</Text>
                             <Text pb={"20px"}>Creating and refining educational content and curriculum can be daunting for educators, as they often are required to do it in the cracks of their daily schedules. Many find themselves working at night. </Text>
                             <Text pb={"20px"}>We want educators to have more time on their hands. Our new AI content tools are poised to transform this process entirely.Here’s what we’ve been working on regarding content and AI.</Text>
@@ -165,7 +165,7 @@ const AssessmentTool = () => {
                                 </Heading>
 
                                 <Box>
-                                    <Text fontSize={["xl","2xl","3xl", "3xl"]}  width={"92%"} margin={"auto"} fontWeight={"medium"} fontStyle={"italic"}textAlign={textAlign}>
+                                    <Text fontSize={["xl","xl","2xl", "2xl"]}  width={"92%"} margin={"auto"} fontWeight={"medium"}textAlign={textAlign}>
                                         Now Edugen has the ability to generate quizzes for a specific level of Bloom's
                                         Taxuonomy, introducing a whole slew of great opportunities to create some unique
                                         and high-performing quizzes.
@@ -244,14 +244,14 @@ const AssessmentTool = () => {
 
                         </Box>
                     </Box>
-                    <Box bg={"#f2f2f2"} mt={"30px"} width={"100%"} >
+                    <Box  mt={"30px"} width={"100%"} >
 
                         {/* Header Section */}
                         <Box  >
                             <Heading as="h1" fontSize={["4xl","4xl","4xl", "4xl"]} pb={"30px"} pt={"30px"} color={"#757f94"} fontWeight={"bold"} width={"94%"} margin={"auto"} textAlign={textAlign} >
                                 Want to create quizzes that target specific levels of Bloom's Taxonomy? Use Edugen!
                             </Heading>
-                            <Text fontStyle={"italic"} fontSize={"xl"} fontWeight={"medium"} color={"gray.500"} pb={5}  width={"93%"} margin={"auto"}textAlign={textAlign}>
+                            <Text  fontSize={"xl"} fontWeight={"medium"} color={"gray.500"} pb={5}  width={"93%"} margin={"auto"}textAlign={textAlign}>
                                 We understand the hassle of formulating quizzes for student tests that need to be unique and
                                 have to fall on various levels of Bloom's Taxonomy for an ideal learning experience.
                                 Sometimes creating a single quiz can take days of work and consume time that could be better utilized elsewhere.
@@ -259,11 +259,11 @@ const AssessmentTool = () => {
                         </Box>
 
                         <Box width={"93%"} margin={"auto"}textAlign={textAlign}>
-                            <Text fontStyle={"italic"} fontSize={"xl"} fontWeight={"medium"} color={"gray.500"} pb={5}textAlign={textAlign}>
+                            <Text  fontSize={"xl"} fontWeight={"medium"} color={"gray.500"} pb={5}textAlign={textAlign}>
                                 This is why we have done the work of creating an effective quiz maker that leverages the power of
                                 modern tech and AI to generate effective Bloom's Taxonomy quizzes in a matter of seconds.
                             </Text>
-                            <Text fontStyle={"italic"} fontSize={"xl"} fontWeight={"medium"} color={"gray.500"}textAlign={textAlign}>
+                            <Text fontSize={"xl"} fontWeight={"medium"} color={"gray.500"}textAlign={textAlign}>
                                 Previously, a task that took hours or maybe days to complete can now be finished in minutes with the help of Edugen.
                             </Text>
 
@@ -334,7 +334,7 @@ const AssessmentTool = () => {
                             <Text pb={"10px"}
                                 //  fontSize="3xl" 
                                 fontSize={{ base: "xl", sm: "xl", md: "3xl", lg: "3xl", xl: "3xl" }}
-                                fontWeight="medium" fontStyle={"italic"}> Edugen has been leading the charge in large-scale education technology innovation. To learn more about our AI-enabled solutions and our human-in-the-loop approach to AI, contact us.</Text>
+                                fontWeight="medium" > Edugen has been leading the charge in large-scale education technology innovation. To learn more about our AI-enabled solutions and our human-in-the-loop approach to AI, contact us.</Text>
                         </Box>
                         <ShimmerButtonDemo name="Contact Us" path="/contacts" />
                     </Box>
