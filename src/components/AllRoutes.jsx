@@ -10,6 +10,7 @@ import { ContentTool } from "../pages/ContentTool";
 import { MultilingualContentTool } from "../pages/MultilingualContentTool";
 import { ProtectedRoute } from "./ProtectedRoute";
 
+
 const AllRoutes = () => {
   return (
     <Routes>

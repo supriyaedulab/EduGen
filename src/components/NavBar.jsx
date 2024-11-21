@@ -98,7 +98,7 @@ export function Navbar() {
     <Box
       bg={"white"}
       px={4}
-      top="0"
+      // top="0"
       zIndex="10"
       width={"100%"}
       height={"70px"}
